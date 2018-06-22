@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="LPS.VechicleLoan"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LPS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar BorderBrush="AntiqueWhite">
+            <AppBarButton Icon="Back" Click="GobackBtn" />
+        </AppBar>
+    </Page.TopAppBar>
+
+    <Grid Background="SkyBlue" Margin="0,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="337*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <!--put everyone inside a stack.-->
+
+        
+        <StackPanel Grid.Row="0" Grid.Column="0">
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,35,0,60" Text="Amount:"  TextAlignment="Center" FontSize="20" FontStretch="Expanded" />
+        </StackPanel>
+        <TextBox x:Name="amount" Grid.Row="0" Grid.Column="1" Height="50" Margin="0,0,0,60" PlaceholderText="how much do you want to loan?" FontSize="20" ToolTipService.ToolTip="You Can Only Borrow 200% of Your Salary" /> 
+        
+        
+        <StackPanel Grid.Row="1" Grid.Column="0">
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="0,35,0,60" Text="Loantype:"  TextAlignment="Center" FontSize="20" FontStretch="Expanded" /> 
+        </StackPanel>
+        <TextBox x:Name="vech" Grid.Row="1" Grid.Column="1" Margin="0,0,0,60" Text="vech" FontSize="20" Height="50" />
+
+        <StackPanel Grid.Row="2" Grid.Column="0">
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="0,35,0,60" Text="Rate[%]:"  TextAlignment="Center" FontSize="20" FontStretch="Expanded" />
+        </StackPanel>
+        <TextBox x:Name="rate" Grid.Row="2" Grid.Column="1" Margin="0,0,0,60" Text="rate"  FontSize="20" Height="50"/>
+
+        <StackPanel Grid.Row="3" Grid.Column="0">
+        <TextBlock Grid.Row="3" Grid.Column="0" Margin="0,35,0,60" Text="Duration:" TextAlignment="Center" FontSize="20" FontStretch="Expanded" />
+        </StackPanel>
+        <ComboBox x:Name="period" Grid.Column="1"  Margin="0,0,0,60" Grid.Row="3" Height="50" FontSize="20" >
+
+            <ComboBoxItem x:Name="sixmonths">6 months</ComboBoxItem>
+            <ComboBoxItem x:Name="oneyr">1 year</ComboBoxItem>
+            <ComboBoxItem x:Name="twoyrs">3 years</ComboBoxItem>
+            <ComboBoxItem x:Name="fiveyrs">5 years</ComboBoxItem>
+            <ComboBoxItem x:Name="sevenyrs">7 years</ComboBoxItem>
+            <ComboBoxItem x:Name="tenyrs">10 years</ComboBoxItem>
+
+        </ComboBox>
+
+        <Button Grid.Row="4" Grid.Column="1" Margin="450,38,0,63" Content="+getLoan" FontSize="25" Click="getLoanBtn" Width="198"/>
+
+    </Grid>
+</Page>

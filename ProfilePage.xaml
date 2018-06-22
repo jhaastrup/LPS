@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="LPS.ProfilePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LPS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="SkyBlue" Margin="0,0,0,0">
+
+       
+                <Grid.ColumnDefinitions>
+               
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions> 
+        <StackPanel Grid.Row="0" > 
+            <TextBlock Text="Name:" FontSize="20" Grid.Row="0" 
+                     Margin="0,50,0,0"  TextAlignment="Center"/>
+            
+            
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" >
+            <TextBlock Text="Username:" Grid.Row="1" FontSize="20" 
+                    Margin="0,50,0,0"   TextAlignment="Center"/>
+        </StackPanel> 
+        
+        <StackPanel Grid.Row="2">
+            <TextBlock Text="Address:" Grid.Row="2" FontSize="20" 
+                       Margin="0,50,0,0" TextAlignment="Center"/>
+            
+        </StackPanel> 
+        
+        <StackPanel Grid.Row="3">
+            <TextBlock Text="Company:" Grid.Row="2" FontSize="20" 
+                       Margin="0,50,0,0" TextAlignment="Center"/> 
+        </StackPanel> 
+        
+        <StackPanel Grid.Row="4">
+            <TextBlock Text="Gross Salary:" Grid.Row="2" FontSize="20" 
+                       Margin="0,50,0,0" TextAlignment="Center"/> 
+        </StackPanel>
+
+        
+        <!--start adding the textbox-->
+        <StackPanel Grid.Column="1" Margin="5,15">
+            <TextBox x:Name="name" Text="name" FontSize="25" Margin="0,25"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,15"> 
+            <TextBox x:Name="username" Text="username" FontSize="25" Margin="0,25"/>
+            
+        </StackPanel>
+        
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="5,15,0,0">
+            <TextBox x:Name="address" Text="address" FontSize="25" Margin="0,25"/>            
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="3" Grid.Column="1" Margin="5,15">
+            <TextBox x:Name="company" Text="company" FontSize="25" Margin="0,25"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="4" Grid.Column="1" Margin="5,15">
+            <TextBox x:Name="salary" Text="gross salary" FontSize="25" Margin="0,25"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="5" Grid.Column="1">
+
+            <Button Content="Edit" HorizontalAlignment="Left" Margin="328,30,0,0" Click="editBtn" VerticalAlignment="Top" Width="153" Height="50"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>

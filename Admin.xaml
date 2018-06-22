@@ -1,0 +1,172 @@
+﻿<Page
+    x:Class="LPS.Admin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LPS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Page.TopAppBar>
+        <AppBar Background="WhiteSmoke" >
+            <AppBarButton Icon = "back" Background="SkyBlue" Click="backBtn" BorderBrush="SkyBlue"/>
+        </AppBar>
+    </Page.TopAppBar>
+
+
+    <Grid Background="SkyBlue" Margin="0,1,0,-1" x:Name="me">
+
+
+
+        <TextBlock Text="Welcome Admin" TextAlignment="Center" Margin="22,10,-22,20" FontSize="50"/>
+        <!--<Border Margin="100,0,100,0 " BorderBrush="Red" BorderThickness="10" HorizontalAlignment="Left" VerticalAlignment="Top">-->
+
+        <StackPanel Orientation="Vertical" Margin="0,100,0,0">
+
+
+            <!--Header-->
+
+            <Grid x:Name="elements" Background="SkyBlue" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+
+
+
+                </Grid.ColumnDefinitions>
+
+                <Border BorderBrush="#33000000" BorderThickness="0.5" Grid.Column="0" Grid.Row="0">
+                    <StackPanel  Grid.Column="0" Grid.Row ="0" Background="WhiteSmoke">
+                        <TextBlock Foreground="Black" Text="Account Number" FontSize="20" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="#33000000" BorderThickness="0.5" Grid.Column="1" Grid.Row="0">
+                    <StackPanel Grid.Column="1" Grid.Row ="0" Background="WhiteSmoke">
+                        <TextBlock Foreground="Black" Text="Name" FontSize="20" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="#33000000" BorderThickness="0.5" Grid.Column="2" Grid.Row="0">
+                    <StackPanel  Grid.Column="2" Grid.Row ="0" Background="WhiteSmoke">
+                        <TextBlock Foreground="Black" Text="Username" FontSize="20" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+
+                <Border BorderBrush="#33000000" BorderThickness="0.5" Grid.Column="3" Grid.Row="0">
+                    <StackPanel Grid.Column="3" Grid.Row ="0" Background="WhiteSmoke"  >
+                        <TextBlock Foreground="Black" Text="Address" FontSize="20"  TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="#33000000" BorderThickness="0.5" Grid.Column="4" Grid.Row="0">
+                    <StackPanel Grid.Column="4" Grid.Row ="0" Background="WhiteSmoke" >
+                        <TextBlock Foreground="Black" Text="Organization" FontSize="20" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+
+                <Border BorderBrush= "#33000000" BorderThickness="0.5" Grid.Column="5" Grid.Row="0">
+                    <StackPanel  Grid.Column="5" Grid.Row ="0" Background="WhiteSmoke" >
+                        <TextBlock Foreground="Black" Text="Salary" FontSize="20" TextAlignment="Center" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="#33000000" BorderThickness="0.5" Grid.Column="6" Grid.Row="0">
+                    <StackPanel Grid.Column="6" Grid.Row ="0" Background="WhiteSmoke" >
+                        <TextBlock Foreground="Black" Text="Rate[%]" FontSize="20" TextAlignment="Center" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="#33000000" BorderThickness="0.5" Grid.Column="7" Grid.Row="0">
+                    <StackPanel Grid.Column="7" Grid.Row ="0"  Background="WhiteSmoke" >
+                        <TextBlock Foreground="Black" Text="Loan Amount" FontSize="20" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+
+                <Border BorderBrush= "#33000000" BorderThickness="0.5" Grid.Column="8" Grid.Row="0">
+                    <StackPanel Grid.Column="8" Grid.Row ="0" Background="WhiteSmoke" >
+                        <TextBlock Foreground="Black" Text="Duration" FontSize="20"  TextAlignment="Center" />
+                    </StackPanel>
+                </Border>
+
+
+                <Border BorderBrush= "#33000000" BorderThickness="0.5" Grid.Column="9" Grid.Row="0">
+                    <StackPanel  Grid.Column="9" Grid.Row ="0" Background="WhiteSmoke" >
+                        <TextBlock Foreground="Black" Text="Begin Date" FontSize="20" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="#33000000" BorderThickness="0.5" Grid.Column="10" Grid.Row="0">
+                    <StackPanel Grid.Column="10" Grid.Row ="0" Background="WhiteSmoke" >
+                        <TextBlock Foreground="Black" Text="End Date" FontSize="20"  TextAlignment="Center" />
+                    </StackPanel>
+                </Border>
+
+
+
+                <Border BorderBrush= "#33000000" BorderThickness="0.5" Grid.Column="11" Grid.Row ="0" >
+                    <StackPanel Grid.Column="11" Grid.Row ="0"  Background="WhiteSmoke" >
+                        <TextBlock Foreground="Black" Text="Paid" FontSize="20" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush= "#33000000" BorderThickness="0.5" Grid.Column="12" Grid.Row ="0" >
+                    <StackPanel Grid.Column="12" Grid.Row ="0" Background="WhiteSmoke">
+                        <TextBlock Foreground="Black" Text="Options" FontSize="20" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <!--body-->
+            </Grid>
+
+
+
+
+
+
+        </StackPanel>
+
+
+        <Popup x:Name="leggover" Margin="500,70,0,0">
+
+            <StackPanel Background="White" Width="500" Height="200">
+                <Border BorderBrush="SkyBlue" BorderThickness="10">
+                    <StackPanel >
+                        <TextBlock Text="Indicate if customer has paid or not" FontSize="20" VerticalAlignment="Center"  
+                      Foreground="Black" TextAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <TextBox x:Name="cub" Height="100" Width="200" />
+                <StackPanel Orientation="Horizontal">
+                    <Button   Content="Cancel" Background="Black" Margin="0,0,0,0" Click="cancelBtn"/>
+                    <Button HorizontalAlignment="Right" Content="Edit" Click="okBtn" Background="SkyBlue" Margin="0,0,-420,0" />
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </Popup>
+
+    </Grid>
+</Page>
+    
